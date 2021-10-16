@@ -18,7 +18,7 @@ class _loadingpageState extends State<loadingpage> {
   }
 
   _navigatetohome() async {
-    await Future.delayed(Duration(milliseconds: 3000), () {});
+    await Future.delayed(Duration(milliseconds: 2500), () {});
     Navigator.pushReplacement(
         context,
         MaterialPageRoute(
