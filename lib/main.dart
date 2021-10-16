@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:we/home_page.dart';
 import 'loading_page.dart';
 void main() {
   runApp(const MyApp());
@@ -14,9 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
        
-        primarySwatch: Colors.blue,
+        //primarySwatch:Colors.white,
       ),
-      home: const loading_page(),
+      home:const loadingpage(),
     );
   }
 }
