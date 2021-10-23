@@ -275,6 +275,7 @@ class SheetHeader extends StatelessWidget {
       child: Text(
         'Register',
         style: TextStyle(
+          fontFamily: 'BalsamiqSans',
           color: Colors.white,
           fontSize: fontSize,
           fontWeight: FontWeight.w500,

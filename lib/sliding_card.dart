@@ -1,6 +1,10 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/painting.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/widgets.dart';
 import 'dart:math' as math;
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 import 'package:we/style.dart';
 
@@ -75,18 +79,100 @@ class DetailCard extends StatelessWidget {
         margin: EdgeInsets.only(left: 8, right: 8, bottom: 14),
         elevation: 10,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(32)),
-        child: Column(
-           
-          children:  <Widget>[
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              
-              
-                 
-            ),
-          ]
+        child: Container(
+          padding: EdgeInsets.all(20.0),
+          child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: const <Widget>[
+                Text(
+                  'Celebrating our most special day please join us',
+                  style: normalFontEN,
+                  textAlign: TextAlign.center,
+                ),
+                SizedBox(
+                  height: 20,
+                ),
+                // Align(
+                //   alignment: Alignment.center,
+                //   child: Image(
+                //     image: AssetImage('assets/images/wedding-ring.png'),
+                //     height: 50,
+                //     width: 50,
+                //     alignment: Alignment.center,
+                //   ),
+
+                //   //   FaIcon(
+                //   //   FontAwesomeIcons.userFriends,
+                //   //   color: Colors.red,
+                //   // )
+                // ),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'คุณมานบ วงษ์กรณ์',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'คุณธัญวรัฒว์ นันทะชัย',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'และ',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'คุณทิพย์ภาภรณ์ เกียรติกูล',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+                SizedBox(
+                  height: 20,
+                ),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'ขอเรียนเชิญเพื่อเป็นเกียรติในงานเลี้ยงรับรองเนื่องในพิธีฉลองมงคลสมรส',
+                      style: subtitleFontTH,
+                      textAlign: TextAlign.center,
+                    )),
+                SizedBox(
+                  height: 20,
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Text(
+                    'นางสาวพนิตกานต์ นันทะชัย',
+                    style: titleFontTH,
+                    textAlign: TextAlign.center,
+                  ),
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Image(
+                    image: AssetImage('assets/images/wedding-ring.png'),
+                    height: 50,
+                    width: 50,
+                    alignment: Alignment.center,
+                  ),
+                ),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'นายรุ่งอนันต์ ต่อนคำสนธิ์',
+                      style: titleFontTH,
+                      textAlign: TextAlign.center,
+                    )),
+              ]),
         ),
-        
       ),
     );
   }
@@ -161,7 +247,7 @@ class CardContent extends StatelessWidget {
             offset: Offset(8 * offset, 0),
             child: Text(
               name,
-              style: titleFont,
+              style: titleFontEN,
               textAlign: TextAlign.left,
             ),
           ),

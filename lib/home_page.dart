@@ -47,11 +47,8 @@ class Header extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 32),
       child: Text(
         'SAVE THE DATE',
-        style: TextStyle(
-            fontFamily: 'Prompt',
-            fontSize: 22.0,
-            fontWeight: FontWeight.bold,
-            color: Color.fromRGBO(218, 165, 32, 1)),
+        style: titleFontEN
+    
       ),
     );
   }
