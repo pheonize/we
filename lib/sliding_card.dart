@@ -171,6 +171,51 @@ class DetailCard extends StatelessWidget {
                       style: titleFontTH,
                       textAlign: TextAlign.center,
                     )),
+                SizedBox(
+                  height: 10,
+                ),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'วันศุกร์ที่ 17 ธันวาคม พ.ศ. 2564',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'ณ ห้อง Grand Ballroom',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+                SizedBox(
+                  height: 10,
+                ),
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      'โรงแรม Le Méridien Chiang Mai (เลอ เมอริเดียน เชียงใหม่)',
+                      style: subtitleFontTH,
+                      textAlign: TextAlign.center,
+                    )),
+
+                Align(
+                    alignment: Alignment.center,
+                    child: Text(
+                      '18:00 น. ขอเชิญร่วมรับประทานอาหาร ฉลองงานมงคลสมรส ',
+                      style: normalFontTH_s,
+                      textAlign: TextAlign.center,
+                    )),
+
+                Align(
+                  alignment: Alignment.center,
+                  child: Image(
+                    image: AssetImage('assets/images/color.png'),
+                    height: 60,
+                    width: 60,
+                    alignment: Alignment.center,
+                  ),
+                ),
               ]),
         ),
       ),
